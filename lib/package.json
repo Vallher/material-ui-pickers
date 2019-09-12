@@ -66,9 +66,6 @@
     "build:analyze": "npm run build",
     "release": "yarn test && yarn version && yarn build && yarn publish --non-interactive --access public build"
   },
-  "publishConfig": {
-    "access": "public"
-  },
   "devDependencies": {
     "@babel/cli": "^7.5.5",
     "@babel/core": "^7.5.5",

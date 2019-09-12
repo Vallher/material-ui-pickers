@@ -270,6 +270,7 @@ export class Calendar extends React.Component<CalendarProps, CalendarState> {
           current={utils.isSameDay(day, now)}
           hidden={!isDayInCurrentMonth}
           selected={utils.isSameDay(selectedDate, day)}
+          aria-label={utils.getDateTimePickerHeaderText(day)}
         >
           {utils.getDayText(day)}
         </Day>
