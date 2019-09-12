@@ -1,6 +1,6 @@
 {
   "name": "@cycmono/accessible-date-picker",
-  "version": "3.2.5",
+  "version": "3.2.6",
   "description": "React components, that implements material design pickers for material-ui v1",
   "main": "./src/index.ts",
   "module": "./src/index.ts",
