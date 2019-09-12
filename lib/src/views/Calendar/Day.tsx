@@ -69,8 +69,20 @@ export const Day: React.FC<DayProps> = ({
     [classes.dayDisabled]: disabled,
   });
 
+  const dayRef = React.useRef<HTMLDivElement>();
+  React.useEffect(() => {
+    if (selected) {
+      dayRef.current!.focus();
+    }
+  });
+
   return (
-    <IconButton className={className} tabIndex={hidden || disabled ? -1 : 0} {...other}>
+    <IconButton
+      className={className}
+      tabIndex={hidden || disabled ? -1 : 0}
+      buttonRef={dayRef}
+      {...other}
+    >
       <Typography variant="body2" color="inherit">
         {children}
       </Typography>
